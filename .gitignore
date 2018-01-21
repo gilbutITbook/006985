@@ -1,0 +1,7 @@
+# OS stuff#
+.DS_Store
+Thumbs.db
+
+# Compiled class file
+*.class
+
