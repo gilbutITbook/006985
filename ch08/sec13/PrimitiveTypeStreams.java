@@ -33,7 +33,7 @@ public class PrimitiveTypeStreams {
         IntStream is3 = IntStream.rangeClosed(5, 10);
         show("is3", is3);
 
-        Path path = Paths.get("../alice.txt");
+        Path path = Paths.get("alice.txt");
         String contents = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
 
         Stream<String> words = Stream.of(contents.split("\\PL+"));

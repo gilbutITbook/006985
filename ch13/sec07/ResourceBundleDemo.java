@@ -11,8 +11,9 @@ public class ResourceBundleDemo {
         
         Locale.setDefault(Locale.Category.DISPLAY, Locale.forLanguageTag("en"));
         Locale.setDefault(Locale.Category.FORMAT, Locale.forLanguageTag("fr-FR"));
-        // Locale locale = Locale.forLanguageTag("fr-FR");
-        ResourceBundle res = ResourceBundle.getBundle("ch11.sec07.messages");
+        ResourceBundle res = ResourceBundle.getBundle("ch13.sec07.messages", Locale.getDefault(Locale.Category.FORMAT));
+        //Locale.setDefault(Locale.forLanguageTag("ko-KR"));
+        //ResourceBundle res = ResourceBundle.getBundle("ch13.sec07.messages");
         String priceTemplate = res.getString("price");
         System.out.println(MessageFormat.format(priceTemplate, 19.95));
         System.out.println(res.getString("greeting"));
