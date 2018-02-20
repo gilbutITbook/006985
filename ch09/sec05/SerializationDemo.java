@@ -14,8 +14,8 @@ public class SerializationDemo {
         Path path = Paths.get("employees.ser");
         try (ObjectOutputStream out = new ObjectOutputStream(
                 Files.newOutputStream(path))) {
-            Employee peter = new Employee("Fred", 90000);
-            Employee paul = new Manager("Barney", 105000);
+            Employee peter = new Employee("Peter", 90000);
+            Employee paul = new Manager("Paul", 105000);
             Manager mary = new Manager("Mary", 180000);
             peter.setBoss(mary);
             paul.setBoss(mary);
