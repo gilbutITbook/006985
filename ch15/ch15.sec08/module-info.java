@@ -1,4 +1,4 @@
 @SuppressWarnings("module")
-module ch15.sec09 {
+module ch15.sec08 {
    requires commons.csv;
 }
